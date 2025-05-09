@@ -39,7 +39,7 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Número do contato',
+		description: 'RemoteJid do contato',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -195,7 +195,7 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Número do contato',
+		description: 'RemoteJid do contato',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -300,7 +300,7 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Número do contato',
+		description: 'RemoteJid do contato',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -344,7 +344,7 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Número do contato',
+		description: 'RemoteJid do contato',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -398,7 +398,7 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Número do contato',
+		description: 'RemoteJid do contato',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -452,7 +452,7 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Número do contato específico',
+		description: 'RemoteJid do contato específico',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -469,7 +469,7 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Número do contato',
+		description: 'RemoteJid do contato',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -513,7 +513,7 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Número do contato',
+		description: 'RemoteJid do contato',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
@@ -571,7 +571,7 @@ export const chatFields: INodeProperties[] = [
 		type: 'string' as NodePropertyTypes,
 		default: '',
 		required: true,
-		description: 'Número do contato',
+		description: 'RemoteJid do contato',
 		displayOptions: {
 			show: {
 				resource: ['chat-api'],
