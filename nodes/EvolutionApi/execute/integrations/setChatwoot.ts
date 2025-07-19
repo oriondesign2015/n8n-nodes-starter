@@ -65,8 +65,8 @@ export async function setChatwoot(ef: IExecuteFunctions) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Operação do Chatwoot não reconhecida',
-					details: 'A operação solicitada não é válida para o recurso do Chatwoot',
+					message: 'Unrecognized Chatwoot operation',
+					details: 'The requested operation is not valid for the Chatwoot resource',
 					code: 'INVALID_OPERATION',
 					timestamp: new Date().toISOString(),
 				},
@@ -89,10 +89,10 @@ export async function setChatwoot(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao configurar Chatwoot',
+					? 'Invalid or missing parameters'
+					: 'Error configuring Chatwoot',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Check if all required fields have been filled correctly'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

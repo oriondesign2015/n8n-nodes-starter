@@ -35,10 +35,10 @@ export async function setPresence(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao definir presença da instância',
+					? 'Invalid or missing parameters'
+					: 'Error setting instance presence',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Check if all required fields have been filled correctly'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

@@ -40,7 +40,7 @@ export async function getMediaBase64(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao obter mídia em Base64',
+                details: 'Error getting media in Base64',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

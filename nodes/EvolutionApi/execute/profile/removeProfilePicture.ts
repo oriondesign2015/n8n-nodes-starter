@@ -28,7 +28,7 @@ export async function removeProfilePicture(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao remover foto do perfil',
+                details: 'Error removing profile picture',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

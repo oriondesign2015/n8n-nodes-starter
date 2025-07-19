@@ -128,8 +128,8 @@ export async function setDifyBot(ef: IExecuteFunctions) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Operação do Dify não reconhecida',
-						details: 'A operação solicitada não é válida para o recurso do Dify',
+					message: 'Unrecognized Dify operation',
+						details: 'The requested operation is not valid for the Dify resource',
 						code: 'INVALID_OPERATION',
 						timestamp: new Date().toISOString(),
 				},
@@ -152,10 +152,10 @@ export async function setDifyBot(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao configurar Dify',
+					? 'Invalid or missing parameters'
+					: 'Error configuring Dify',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Check if all required fields have been filled correctly'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

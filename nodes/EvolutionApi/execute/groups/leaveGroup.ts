@@ -29,7 +29,7 @@ export async function leaveGroup(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao sair do grupo',
+				details: 'Error leaving group',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

@@ -45,7 +45,7 @@ export async function manageArchive(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao gerenciar arquivo da conversa',
+				details: 'Error managing chat archive',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

@@ -1,99 +1,99 @@
 import { INodeProperties } from 'n8n-workflow';
 
-// Opções da instances-api (Instancias)
+// Options for instances-api (Instances)
 export const instancesOperationsOptions: INodeProperties = {
-	displayName: 'Operação',
+	displayName: 'Operation',
 	name: 'operation',
 	type: 'options',
 	noDataExpression: true,
 	displayOptions: {
 		show: {
-			resource: ['instances-api'], // Value do Resource
+			resource: ['instances-api'], // Resource value
 		},
 	},
 
-	// Opções que serão vinculadas a Operação "Instancia"
+	// Options that will be linked to the "Instance" Operation
 	options: [
-		// Opção = Criar instancia
+		// Option = Create instance
 		{
 			// Create Instance Basic
-			name: 'Criar Instancia',
-			action: 'Criar instancia',
-			description: 'Cria uma nova Instancia',
+			name: 'Create Instance',
+			action: 'Create instance',
+			description: 'Creates a new Instance',
 			value: 'instance-basic',
 		},
 
-		// Opção = Conectar Instância
+		// Option = Connect Instance
 		{
 			// Instance Connect
-			name: 'Conectar Instancia',
-			action: 'Conectar instancia',
-			description: 'Gera a conexão de uma Instancia (QR ou Base64)',
+			name: 'Connect Instance',
+			action: 'Connect instance',
+			description: 'Generates the connection of an Instance (QR or Base64)',
 			value: 'instance-connect',
 		},
 
-		// Opção = Buscar Instancia
+		// Option = Fetch Instance
 		{
 			// Fetch Instances
-			name: 'Buscar Instancia',
-			action: 'Buscar instancia',
-			description: 'Busca e lista as Instancias criadas',
+			name: 'Fetch Instance',
+			action: 'Fetch instance',
+			description: 'Fetches and lists the created Instances',
 			value: 'fetch-instances',
 		},
 
-		// Opção = Definir Comportamento da instancia
+		// Option = Set Instance Behavior
 		{
-			name: 'Definir Comportamento',
-			action: 'Definir comportamento',
-			description: 'Define o comportamento da instancia',
+			name: 'Set Behavior',
+			action: 'Set behavior',
+			description: 'Sets the instance behavior',
 			value: 'instance-settings',
 		},
 
-		// Opção = Definir presença
+		// Option = Set presence
 		{
 			// Set Presence
-			name: 'Definir Presença',
-			action: 'Definir presen a',
-			description: 'Define a presença na instancia',
+			name: 'Set Presence',
+			action: 'Set presence',
+			description: 'Sets the presence in the instance',
 			value: 'set-presence',
 		},
 
-		// Opção = Definit Proxy
+		// Option = Set Proxy
 		{
 			// Set/find Proxy
-			name: 'Definir/Buscar Proxy',
+			name: 'Set/Fetch Proxy',
 			action: 'Proxy',
-			description: 'Define um Proxy na instancia',
+			description: 'Sets a Proxy in the instance',
 			value: 'set-proxy',
 		},
 
-		// Opção = Reiniciar instancia
+		// Option = Restart instance
 		{
 			// Restart Instance
-			name: 'Reiniciar Instancia',
-			action: 'Reiniciar instancia',
-			description: 'Reinicia o socket da Instancia',
+			name: 'Restart Instance',
+			action: 'Restart instance',
+			description: 'Restarts the Instance socket',
 			value: 'restart-instance',
 		},
 
-		// Opção = Desconectar instancia
+		// Option = Disconnect instance
 		{
 			// Logout Instance
-			name: 'Desconectar Instancia',
-			action: 'Desconectar instancia',
-			description: 'Desconecta o WhatsApp da Instancia',
+			name: 'Disconnect Instance',
+			action: 'Disconnect instance',
+			description: 'Disconnects WhatsApp from the Instance',
 			value: 'logout-instance',
 		},
 
-		// Opção = Deletar instancia
+		// Option = Delete instance
 		{
 			// Delete Instance
-			name: 'Deletar Instancia',
-			action: 'Deletar instancia',
-			description: 'Deleta uma Instancia',
+			name: 'Delete Instance',
+			action: 'Delete instance',
+			description: 'Deletes an Instance',
 			value: 'delete-instance',
 		},
 	],
-	// Definindo como padrão a opção "Criar Instancia"
+	// Setting "Create Instance" as the default
 	default: 'instance-basic',
 };

@@ -42,7 +42,7 @@ export async function findChats(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao buscar chats',
+                details: 'Error fetching chats',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

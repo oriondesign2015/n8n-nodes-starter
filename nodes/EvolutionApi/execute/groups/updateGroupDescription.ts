@@ -35,7 +35,7 @@ export async function updateGroupDescription(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao atualizar descrição do grupo',
+				details: 'Error updating group description',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},
