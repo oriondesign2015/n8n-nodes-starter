@@ -42,7 +42,7 @@ export async function findMessages(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao buscar mensagens',
+                details: 'Error fetching messages',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

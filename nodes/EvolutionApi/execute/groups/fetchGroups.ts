@@ -41,7 +41,7 @@ export async function fetchGroups(ef: IExecuteFunctions) {
 				break;
 
 			default:
-				throw new Error('Método de busca inválido');
+				throw new Error('Invalid search method');
 		}
 
 		const response = await evolutionRequest(ef, requestOptions);
@@ -56,7 +56,7 @@ export async function fetchGroups(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao buscar informações do(s) grupo(s)',
+				details: 'Error fetching group(s) information',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

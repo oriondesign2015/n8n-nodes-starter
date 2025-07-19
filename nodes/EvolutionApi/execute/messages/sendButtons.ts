@@ -8,7 +8,7 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendButtons(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Required parameters
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
 		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 		const title = ef.getNodeParameter('title', 0) as string;
@@ -23,13 +23,13 @@ export async function sendButtons(ef: IExecuteFunctions) {
 			phoneNumber?: string;
 		}>;
 
-		// Validação dos botões
+		// Button validation
 		if (!Array.isArray(buttons) || buttons.length === 0 || buttons.length > 3) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Lista de botões inválida',
-					details: 'É necessário fornecer entre 1 e 3 botões',
+					message: 'Invalid button list',
+					details: 'You must provide between 1 and 3 buttons',
 					code: 'INVALID_BUTTONS',
 					timestamp: new Date().toISOString(),
 				},
@@ -40,7 +40,7 @@ export async function sendButtons(ef: IExecuteFunctions) {
 			};
 		}
 
-		// Opções adicionais
+		// Additional options
 		const options = ef.getNodeParameter('options_message', 0, {}) as {
 			delay?: number;
 			quoted?: {
@@ -129,10 +129,10 @@ export async function sendButtons(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar botões',
+					? 'Invalid or missing parameters'
+					: 'Error sending buttons',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Check if all required fields have been filled correctly'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

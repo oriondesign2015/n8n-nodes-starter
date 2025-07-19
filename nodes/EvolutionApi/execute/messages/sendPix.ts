@@ -8,21 +8,21 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendPix(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Required parameters
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
 		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 		const name = ef.getNodeParameter('name', 0) as string;
 		const keyType = ef.getNodeParameter('keyType', 0) as string;
 		const key = ef.getNodeParameter('key', 0) as string;
 
-		// Validação do tipo de chave PIX
+		// PIX key type validation
 		const validKeyTypes = ['cpf', 'cnpj', 'email', 'phone', 'random'];
 		if (!validKeyTypes.includes(keyType)) {
 			const errorData = {
 				success: false,
 				error: {
-					message: 'Tipo de chave PIX inválida',
-					details: 'O tipo de chave PIX deve ser: cpf, cnpj, email, phone ou random',
+					message: 'Invalid PIX key type',
+					details: 'The PIX key type must be: cpf, cnpj, email, phone or random',
 					code: 'INVALID_PIX_KEY_TYPE',
 					timestamp: new Date().toISOString(),
 				},
@@ -68,10 +68,10 @@ export async function sendPix(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar botão PIX',
+					? 'Invalid or missing parameters'
+					: 'Error sending PIX button',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Check if all required fields have been filled correctly'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

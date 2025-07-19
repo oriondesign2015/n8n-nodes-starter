@@ -8,16 +8,16 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendAudio(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Required parameters
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
 		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 		const media = ef.getNodeParameter('media', 0) as string;
 
-		// Parâmetros opcionais com valores padrão
+		// Optional parameters with default values
 		const mimetype = (ef.getNodeParameter('mimetype', 0, 'audio/mp3') as string) || 'audio/mp3';
 		const fileName = (ef.getNodeParameter('fileName', 0, 'audio.mp3') as string) || 'audio.mp3';
 
-		// Opções adicionais
+		// Additional options
 		const options = ef.getNodeParameter('options_message', 0, {}) as {
 			delay?: number;
 			quoted?: {
@@ -88,10 +88,10 @@ export async function sendAudio(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar áudio',
+					? 'Invalid or missing parameters'
+					: 'Error sending audio',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Check if all required fields have been filled correctly'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

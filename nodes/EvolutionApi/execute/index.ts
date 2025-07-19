@@ -69,7 +69,7 @@ type ResourceOperationFunctions = {
 	};
 };
 
-// este dicionario é utilizado para mapear as operações disponíveis para cada recurso e operação para cada função
+// This dictionary is used to map the available operations for each resource and operation for each function
 export const resourceOperationsFunctions: ResourceOperationFunctions = {
 	'instances-api': {
 		'instance-basic': createInstanceBasic,

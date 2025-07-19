@@ -39,7 +39,7 @@ export async function updateParticipants(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao atualizar membros do grupo',
+				details: 'Error updating group members',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

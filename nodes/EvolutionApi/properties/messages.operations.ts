@@ -1,119 +1,119 @@
 import { INodeProperties } from 'n8n-workflow';
 
-// Opções da messages-api (Mensagens)
+// Options for messages-api (Messages)
 export const messagesOperationsOptions: INodeProperties = {
-	displayName: 'Operação',
+	displayName: 'Operation',
 	name: 'operation',
 	type: 'options',
 	noDataExpression: true,
 	displayOptions: {
 		show: {
-			resource: ['messages-api'], // Value do Resource
+			resource: ['messages-api'], // Resource value
 		},
 	},
 	options: [
-		// Opção = Enviar mensagem de Texto
+		// Option = Send Text Message
 		{
 			// Send Text
-			name: 'Enviar Texto',
-			action: 'Enviar texto',
-			description: 'Envia mensagem de Texto',
+			name: 'Send Text',
+			action: 'Send text',
+			description: 'Sends a text message',
 			value: 'send-text',
 		},
 
-		// Opção = Enviar Imagem
+		// Option = Send Image
 		{
 			// Send Media
-			name: 'Enviar Imagem',
-			action: 'Enviar imagem',
-			description: 'Envia mensagem de Imagem',
+			name: 'Send Image',
+			action: 'Send image',
+			description: 'Sends an image message',
 			value: 'send-image',
 		},
 
-		// Opção = Enviar Video
+		// Option = Send Video
 		{
 			// Send Media
-			name: 'Enviar Video',
-			action: 'Enviar video',
-			description: 'Enviar mensagem de Video',
+			name: 'Send Video',
+			action: 'Send video',
+			description: 'Sends a video message',
 			value: 'send-video',
 		},
 
-		// Opção = Enviar Audio
+		// Option = Send Audio
 		{
 			// Send Narrated Audio
-			name: 'Enviar Audio',
-			action: 'Enviar audio',
-			description: 'Enviar mensagem de Audio',
+			name: 'Send Audio',
+			action: 'Send audio',
+			description: 'Sends an audio message',
 			value: 'send-audio',
 		},
 
-		// Opção = Enviar Documento
+		// Option = Send Document
 		{
 			// Send Media
-			name: 'Enviar Documento',
-			action: 'Enviar documento',
-			description: 'Enviar mensagem com Documento',
+			name: 'Send Document',
+			action: 'Send document',
+			description: 'Sends a message with a document',
 			value: 'send-document',
 		},
 
-		// Opção = Enviar Enquete
+		// Option = Send Poll
 		{
 			// Send Poll
-			name: 'Enviar Enquete',
-			action: 'Enviar enquete',
-			description: 'Envia uma Enquete de até 12 opções',
+			name: 'Send Poll',
+			action: 'Send poll',
+			description: 'Sends a poll with up to 12 options',
 			value: 'send-poll',
 		},
 
-		// Opção = Enviar Contato
+		// Option = Send Contact
 		{
-			name: 'Enviar Contato',
-			action: 'Enviar contato',
-			description: 'Envia um contato no whatsapp',
+			name: 'Send Contact',
+			action: 'Send contact',
+			description: 'Sends a contact on WhatsApp',
 			value: 'send-contact',
 		},
 
-		// Opção = Enviar Lista
+		// Option = Send List
 		{
-			name: 'Enviar Lista',
-			action: 'Enviar lista',
-			description: 'Envia uma lista de opções interativa',
+			name: 'Send List',
+			action: 'Send list',
+			description: 'Sends an interactive list of options',
 			value: 'send-list',
 		},
 
-		// Opção = Enviar Botões
+		// Option = Send Buttons
 		{
-			name: 'Enviar Botões',
-			action: 'Enviar bot es',
-			description: 'Envia mensagem com botões interativos',
+			name: 'Send Buttons',
+			action: 'Send buttons',
+			description: 'Sends a message with interactive buttons',
 			value: 'send-buttons',
 		},
 
-		// Opção = Enviar PIX
+		// Option = Send PIX
 		{
-			name: 'Enviar PIX',
-			action: 'Enviar PIX',
-			description: 'Envia botão de pagamento PIX',
+			name: 'Send PIX',
+			action: 'Send PIX',
+			description: 'Sends a PIX payment button',
 			value: 'send-pix',
 		},
 
-		// Opção = Enviar Status
+		// Option = Send Status
 		{
-			name: 'Enviar Status',
-			action: 'Enviar status',
-			description: 'Publicar um Status/Stories',
+			name: 'Send Status',
+			action: 'Send status',
+			description: 'Publishes a Status/Story',
 			value: 'send-stories',
 		},
 
-		// Opção = Reagir Mensagem
+		// Option = React to Message
 		{
-			name: 'Reagir Mensagem',
-			action: 'Reagir mensagem',
-			description: 'Adiciona uma reação em uma mensagem',
+			name: 'React to Message',
+			action: 'React to message',
+			description: 'Adds a reaction to a message',
 			value: 'send-reaction',
 		},
 	],
-	// Definindo como padrão a opção "Enviar Texto"
+	// Setting "Send Text" as the default option
 	default: 'send-text',
 };

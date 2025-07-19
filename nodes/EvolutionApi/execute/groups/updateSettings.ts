@@ -35,7 +35,7 @@ export async function updateSettings(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao atualizar configurações do grupo',
+				details: 'Error updating group settings',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

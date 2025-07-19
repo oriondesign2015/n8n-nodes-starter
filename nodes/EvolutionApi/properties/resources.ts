@@ -1,17 +1,17 @@
 import { INodeProperties } from 'n8n-workflow';
 
 export const resources: INodeProperties = {
-	displayName: 'Recurso',
+	displayName: 'Resource',
 	name: 'resource',
 	type: 'options',
 	noDataExpression: true,
 	options: [
 		{
-			name: 'Instância',
+			name: 'Instance',
 			value: 'instances-api',
 		},
 		{
-			name: 'Mensagem',
+			name: 'Message',
 			value: 'messages-api',
 		},
 		{
@@ -19,19 +19,19 @@ export const resources: INodeProperties = {
 			value: 'chat-api',
 		},
 		{
-			name: 'Grupo',
+			name: 'Group',
 			value: 'groups-api',
 		},
 		{
-			name: 'Perfil',
+			name: 'Profile',
 			value: 'profile-api',
 		},
 		{
-			name: 'Evento',
+			name: 'Event',
 			value: 'events-api',
 		},
 		{
-			name: 'Integração',
+			name: 'Integration',
 			value: 'integrations-api',
 		},
 	],

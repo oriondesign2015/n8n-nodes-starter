@@ -38,10 +38,10 @@ export class EvolutionApi implements INodeType {
 				'Content-Type': 'application/json',
 			},
 		},
-		// A estrutura de propriedades do nó:
-		// • Resources: Recursos disponíveis (Instancia, Mensagens, Eventos, Integrações)
-		// • Operations: Operações de cada recurso (Ex: Criar instancia, Enviar mensagem, Definir Webhook)
-		// • Fields: Campos de cada operação
+		// The node's property structure:
+		// • Resources: Available resources (Instance, Messages, Events, Integrations)
+		// • Operations: Operations for each resource (e.g., Create instance, Send message, Set Webhook)
+		// • Fields: Fields for each operation
 		properties: evolutionNodeProperties,
 	};
 
@@ -49,21 +49,21 @@ export class EvolutionApi implements INodeType {
 		const resource = this.getNodeParameter('resource', 0) as string;
 		const operation = this.getNodeParameter('operation', 0) as string;
 
-		// Busca a função para o recurso e operação selecionados
+		// Search for the function for the selected resource and operation
 		const fn = resourceOperationsFunctions[resource][operation];
 
-		// Se não encontrar a função, retorna um erro
+		// If the function is not found, return an error
 		if (!fn) {
 			throw new NodeApiError(this.getNode(), {
-				message: 'Operação não suportada.',
-				description: `A função "${operation}" para o recurso "${resource}" não é suportada!`,
+				message: 'Unsupported operation.',
+				description: `The function "${operation}" for the resource "${resource}" is not supported!`,
 			});
 		}
 
-		// Executa a função
+		// Execute the function
 		const responseData = await fn(this);
 
-		// Retornar apenas o JSON
+		// Return only the JSON
 		return [this.helpers.returnJsonArray(responseData)];
 	}
 }

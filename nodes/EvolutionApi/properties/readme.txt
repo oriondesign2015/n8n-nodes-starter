@@ -1,6 +1,6 @@
-Observação deste documento:
-Este documento serve para a Definição de Operações que devem aparecer
-em cada Resource, incluindo a criação de novos campos para cada Operation
+Note on this document:
+This document serves for the Definition of Operations that should appear
+in each Resource, including the creation of new fields for each Operation
 
  ██████╗ ██████╗ ███████╗██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
 ██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
@@ -9,17 +9,17 @@ em cada Resource, incluindo a criação de novos campos para cada Operation
 ╚██████╔╝██║     ███████╗██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
  ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
 
-Operation = Funções/Opções de cada Resource (Instancia, Mensagens, Integração, Conversa, Perfil e Grupo)
+Operation = Functions/Options of each Resource (Instance, Messages, Integration, Chat, Profile and Group)
 
-"O que cada Resource vai apresentar ao ser selecionado"
+"What each Resource will present when selected"
 
-Exemplo:
-Instancias:
-  • Criar instncia;
-  • Criar instancia com proxy;
-  • Conectar instancia;
+Example:
+Instances:
+  • Create instance;
+  • Create instance with proxy;
+  • Connect instance;
 
-Cada Resource adicionada tera um desse para listar as opções/funções de cada Resource
+Each added Resource will have one of these to list the options/functions of each Resource
 
 
 
@@ -31,13 +31,13 @@ Cada Resource adicionada tera um desse para listar as opções/funções de cada
 	███████╗███████╗███████╗██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ███████║
 	╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
 
-Elements = Os campos que aparecem em cada Operation
+Elements = The fields that appear in each Operation
 
-"Cada Operation (ex: Enviar mensagem de Texto) tem campos que precisam ser preenchido para fazer uma requisição"
+"Each Operation (ex: Send Text Message) has fields that need to be filled to make a request"
 
-Exemplo:
-Enviar Mensagem de Texto:
-  • Instancia que vai enviar;
-  • RemoteJid do destinatario;
-  • Mensagem que vai ser enviada;
+Example:
+Send Text Message:
+  • Instance that will send;
+  • RemoteJid of the recipient;
+  • Message that will be sent;
 

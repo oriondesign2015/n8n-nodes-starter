@@ -35,7 +35,7 @@ export async function updateGroupName(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao atualizar nome do grupo',
+				details: 'Error updating group name',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

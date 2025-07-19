@@ -42,7 +42,7 @@ export async function updateMessage(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao editar mensagem',
+                details: 'Error editing message',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

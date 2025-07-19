@@ -43,7 +43,7 @@ export async function markChatUnread(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao marcar conversa como não lida',
+				details: 'Error marking chat as unread',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},
