@@ -1,3 +1,5 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import {
 	IExecuteFunctions,
 	IRequestOptions,
@@ -8,7 +10,7 @@ import { evolutionRequest } from '../evolutionRequest';
 
 export async function sendReaction(ef: IExecuteFunctions) {
 	try {
-		// Parâmetros obrigatórios
+		// Required parameters
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
 		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 		const messageId = ef.getNodeParameter('messageId', 0) as string;
@@ -63,10 +65,10 @@ export async function sendReaction(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message.includes('Could not get parameter')
-					? 'Parâmetros inválidos ou ausentes'
-					: 'Erro ao enviar reação',
+					? 'Invalid or missing parameters'
+					: 'Error sending reaction',
 				details: error.message.includes('Could not get parameter')
-					? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+					? 'Check that all required fields are filled correctly'
 					: error.message,
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),

@@ -1,3 +1,5 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import {
     IExecuteFunctions,
     IRequestOptions,
@@ -41,7 +43,7 @@ export async function findContacts(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao buscar contatos',
+                details: 'Error fetching contacts',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

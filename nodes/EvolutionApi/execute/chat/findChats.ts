@@ -1,3 +1,5 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import {
     IExecuteFunctions,
     IRequestOptions,
@@ -42,7 +44,7 @@ export async function findChats(ef: IExecuteFunctions) {
             success: false,
             error: {
                 message: error.message,
-                details: 'Erro ao buscar chats',
+                details: 'Error fetching chats',
                 code: error.code || 'UNKNOWN_ERROR',
                 timestamp: new Date().toISOString(),
             },

@@ -1,3 +1,5 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import {
 	IExecuteFunctions,
 	IRequestOptions,
@@ -40,7 +42,7 @@ export async function createGroup(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao criar grupo',
+				details: 'Error creating group',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},

@@ -1,3 +1,5 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import {
 	IExecuteFunctions,
 	IRequestOptions,
@@ -13,12 +15,12 @@ export async function sendImage(ef: IExecuteFunctions) {
 
 	for (let i = 0; i < items.length; i++) {
 		try {
-			// Parâmetros obrigatórios
+			// Required parameters
 			const instanceName = ef.getNodeParameter('instanceName', i) as string;
 			const remoteJid = ef.getNodeParameter('remoteJid', i) as string;
 			const media = ef.getNodeParameter('media', i) as string;
 
-			// Parâmetros opcionais com valores padrão
+			// Optional parameters with default values
 			const mimetype = (ef.getNodeParameter('mimetype', i, 'image/jpeg') as string) || 'image/jpeg';
 			const caption = ef.getNodeParameter('caption', i, '') as string;
 			const fileName = (ef.getNodeParameter('fileName', i, 'image.jpg') as string) || 'image.jpg';
@@ -93,11 +95,11 @@ export async function sendImage(ef: IExecuteFunctions) {
 			});
 		} catch (error) {
 			const errorMessage = error.message.includes('Could not get parameter')
-				? 'Parâmetros inválidos ou ausentes'
-				: 'Erro ao enviar imagem';
+				? 'Invalid or missing parameters'
+				: 'Error sending image';
 
 			const errorDetails = error.message.includes('Could not get parameter')
-				? 'Verifique se todos os campos obrigatórios foram preenchidos corretamente'
+				? 'Check that all required fields are filled correctly'
 				: error.message;
 
 			if (!ef.continueOnFail()) {

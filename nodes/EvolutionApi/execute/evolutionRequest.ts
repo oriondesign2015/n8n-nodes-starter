@@ -1,3 +1,5 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import { IExecuteFunctions, IRequestOptions } from 'n8n-workflow';
 
 export async function evolutionRequest(ef: IExecuteFunctions, options: IRequestOptions) {

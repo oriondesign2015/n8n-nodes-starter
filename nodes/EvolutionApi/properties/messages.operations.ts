@@ -1,8 +1,10 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import { INodeProperties } from 'n8n-workflow';
 
 // Opções da messages-api (Mensagens)
 export const messagesOperationsOptions: INodeProperties = {
-	displayName: 'Operação',
+	displayName: 'Operation',
 	name: 'operation',
 	type: 'options',
 	noDataExpression: true,
@@ -15,105 +17,105 @@ export const messagesOperationsOptions: INodeProperties = {
 		// Opção = Enviar mensagem de Texto
 		{
 			// Send Text
-			name: 'Enviar Texto',
-			action: 'Enviar texto',
-			description: 'Envia mensagem de Texto',
+			name: 'Send Text',
+			action: 'Send text',
+			description: 'Send a text message',
 			value: 'send-text',
 		},
 
 		// Opção = Enviar Imagem
 		{
 			// Send Media
-			name: 'Enviar Imagem',
-			action: 'Enviar imagem',
-			description: 'Envia mensagem de Imagem',
+			name: 'Send Image',
+			action: 'Send image',
+			description: 'Send an image message',
 			value: 'send-image',
 		},
 
 		// Opção = Enviar Video
 		{
 			// Send Media
-			name: 'Enviar Video',
-			action: 'Enviar video',
-			description: 'Enviar mensagem de Video',
+			name: 'Send Video',
+			action: 'Send video',
+			description: 'Send a video message',
 			value: 'send-video',
 		},
 
 		// Opção = Enviar Audio
 		{
 			// Send Narrated Audio
-			name: 'Enviar Audio',
-			action: 'Enviar audio',
-			description: 'Enviar mensagem de Audio',
+			name: 'Send Audio',
+			action: 'Send audio',
+			description: 'Send an audio message',
 			value: 'send-audio',
 		},
 
 		// Opção = Enviar Documento
 		{
 			// Send Media
-			name: 'Enviar Documento',
-			action: 'Enviar documento',
-			description: 'Enviar mensagem com Documento',
+			name: 'Send Document',
+			action: 'Send document',
+			description: 'Send a document message',
 			value: 'send-document',
 		},
 
 		// Opção = Enviar Enquete
 		{
 			// Send Poll
-			name: 'Enviar Enquete',
-			action: 'Enviar enquete',
-			description: 'Envia uma Enquete de até 12 opções',
+			name: 'Send Poll',
+			action: 'Send poll',
+			description: 'Send a poll with up to 12 options',
 			value: 'send-poll',
 		},
 
 		// Opção = Enviar Contato
 		{
-			name: 'Enviar Contato',
-			action: 'Enviar contato',
-			description: 'Envia um contato no whatsapp',
+			name: 'Send Contact',
+			action: 'Send contact',
+			description: 'Send a WhatsApp contact',
 			value: 'send-contact',
 		},
 
 		// Opção = Enviar Lista
 		{
-			name: 'Enviar Lista',
-			action: 'Enviar lista',
-			description: 'Envia uma lista de opções interativa',
+			name: 'Send List',
+			action: 'Send list',
+			description: 'Send an interactive list',
 			value: 'send-list',
 		},
 
 		// Opção = Enviar Botões
 		{
-			name: 'Enviar Botões',
-			action: 'Enviar bot es',
-			description: 'Envia mensagem com botões interativos',
+			name: 'Send Buttons',
+			action: 'Send buttons',
+			description: 'Send a message with interactive buttons',
 			value: 'send-buttons',
 		},
 
 		// Opção = Enviar PIX
 		{
-			name: 'Enviar PIX',
-			action: 'Enviar PIX',
-			description: 'Envia botão de pagamento PIX',
+			name: 'Send PIX',
+			action: 'Send PIX',
+			description: 'Send a PIX payment button',
 			value: 'send-pix',
 		},
 
 		// Opção = Enviar Status
 		{
-			name: 'Enviar Status',
-			action: 'Enviar status',
-			description: 'Publicar um Status/Stories',
+			name: 'Send Status',
+			action: 'Send status',
+			description: 'Publish a status/story',
 			value: 'send-stories',
 		},
 
 		// Opção = Reagir Mensagem
 		{
-			name: 'Reagir Mensagem',
-			action: 'Reagir mensagem',
-			description: 'Adiciona uma reação em uma mensagem',
+			name: 'React Message',
+			action: 'React message',
+			description: 'Add a reaction to a message',
 			value: 'send-reaction',
 		},
 	],
-	// Definindo como padrão a opção "Enviar Texto"
+	// Set "Send Text" as the default option
 	default: 'send-text',
 };

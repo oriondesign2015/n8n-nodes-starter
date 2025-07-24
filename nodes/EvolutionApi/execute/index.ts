@@ -1,3 +1,5 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import { IExecuteFunctions } from 'n8n-workflow';
 import { createInstanceBasic } from './instance/createInstanceBasic';
 import { deleteInstance } from './instance/deleteInstance';

@@ -1,3 +1,5 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import {
 	IAuthenticateGeneric,
 	ICredentialTestRequest,
@@ -6,27 +8,26 @@ import {
 } from 'n8n-workflow';
 
 export class EvolutionApi implements ICredentialType {
-	name = 'evolutionApi';
-	displayName = 'Evolution API';
-	documentationUrl = 'https://doc.evolution-api.com/pt';
+       name = 'evolutionApi';
+       displayName = 'Zapin Evo';
+       documentationUrl = 'https://doc.evolution-api.com/v2/api-reference/get-information';
 	properties: INodeProperties[] = [
+               {
+                       displayName: 'Server URL',
+                       name: 'server-url',
+                       type: 'hidden',
+                       default: 'https://api.zapin.tech',
+                       description: 'Server URL for Zapin Evo',
+               },
 		{
-			displayName: 'Server Url',
-			name: 'server-url',
-			type: 'string',
-			default: '',
-			placeholder: 'https://exemplo.com',
-			description: 'Digite a URL completa da sua Evolution API (ex: https://api.exemplo.com)',
-		},
-		{
-			displayName: 'ApiKey',
+			displayName: 'API Key',
 			name: 'apikey',
 			type: 'string',
 			default: '',
 			typeOptions: {
 				password: true,
 			},
-			description: 'Digite a ApiKey da Instancia ou Global da sua Evolution API',
+                       description: 'Enter the instance or global Zapin Evo API key',
 		},
 	];
 

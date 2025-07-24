@@ -1,3 +1,5 @@
+// Based on: https://github.com/oriondesign2015/n8n-nodes-evolution-api
+// Uses: https://github.com/EvolutionAPI/evolution-api
 import {
 	IExecuteFunctions,
 	INodeExecutionData,
@@ -9,17 +11,17 @@ import { evolutionNodeProperties } from './properties';
 import { resourceOperationsFunctions } from './execute';
 
 export class EvolutionApi implements INodeType {
-	description: INodeTypeDescription = {
-		displayName: 'Evolution API',
-		name: 'evolutionApi',
-		icon: 'file:evolutionapi.svg',
-		group: ['transform'],
-		version: 1,
-		subtitle: '={{$parameter["operation"]}}',
-		description: 'Interact with Evolution API',
-		defaults: {
-			name: 'Evolution API',
-		},
+       description: INodeTypeDescription = {
+               displayName: 'Zapin Evo',
+               name: 'evolutionApi',
+               icon: 'file:evolutionapi.svg',
+               group: ['transform'],
+               version: 1,
+               subtitle: '={{$parameter["operation"]}}',
+               description: 'Interact with Zapin Evo',
+               defaults: {
+                       name: 'Zapin Evo',
+               },
 		// @ts-ignore
 		inputs: ['main'],
 		// @ts-ignore
@@ -30,18 +32,18 @@ export class EvolutionApi implements INodeType {
 				required: true,
 			},
 		],
-		requestDefaults: {
-			baseURL: 'https://doc.evolution-api.com/api-reference',
-			url: '',
+               requestDefaults: {
+                       baseURL: 'https://doc.evolution-api.com/v2/api-reference',
+                       url: '',
 			headers: {
 				Accept: 'application/json',
 				'Content-Type': 'application/json',
 			},
 		},
-		// A estrutura de propriedades do nó:
-		// • Resources: Recursos disponíveis (Instancia, Mensagens, Eventos, Integrações)
-		// • Operations: Operações de cada recurso (Ex: Criar instancia, Enviar mensagem, Definir Webhook)
-		// • Fields: Campos de cada operação
+		// Node properties structure:
+		// • Resources: available resources (Instance, Messages, Events, Integrations)
+		// • Operations: operations for each resource (e.g., Create instance, Send message, Set webhook)
+		// • Fields: fields for each operation
 		properties: evolutionNodeProperties,
 	};
 
@@ -52,11 +54,11 @@ export class EvolutionApi implements INodeType {
 		// Busca a função para o recurso e operação selecionados
 		const fn = resourceOperationsFunctions[resource][operation];
 
-		// Se não encontrar a função, retorna um erro
+		// Throw an error if the function was not found
 		if (!fn) {
 			throw new NodeApiError(this.getNode(), {
-				message: 'Operação não suportada.',
-				description: `A função "${operation}" para o recurso "${resource}" não é suportada!`,
+				message: 'Unsupported operation.',
+				description: `The function "${operation}" for resource "${resource}" is not supported!`,
 			});
 		}
 
