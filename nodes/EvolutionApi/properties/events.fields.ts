@@ -6,7 +6,7 @@ import { INodeProperties } from 'n8n-workflow';
 export const eventsFields: INodeProperties[] = [
 	// Campos = Webhook
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -209,7 +209,7 @@ export const eventsFields: INodeProperties[] = [
 
 	// Campos = RabbitMQ
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',

@@ -4,7 +4,7 @@ import { INodeProperties } from 'n8n-workflow';
 
 // Opções da events-api (Eventos)
 export const eventsOperationsOptions: INodeProperties = {
-	displayName: 'Operação',
+        displayName: 'Operation',
 	name: 'operation',
 	type: 'options',
 	noDataExpression: true,
@@ -13,23 +13,21 @@ export const eventsOperationsOptions: INodeProperties = {
 			resource: ['events-api'], // Value do Resource
 		},
 	},
-	options: [
-		// Opção = Enviar mensagem de Texto
-		{
-			// Set/find Webhook
-			name: 'Webhook',
-			action: 'Webhook',
-			description: 'Define/Busca integração com Webhook',
-			value: 'webhook',
-		},
-		{
-			// Set/find Rabbitmq
-			name: 'RabbitMQ',
-			action: 'Rabbitmq',
-			description: 'Define/Busca integração com RabbitMQ',
-			value: 'rabbitmq',
-		},
-	],
-	// Definindo como padrão a opção "Enviar Texto"
-	default: 'webhook',
+        options: [
+                {
+                        name: 'Webhook',
+                        action: 'Webhook',
+                        description: 'Configure or fetch a webhook integration',
+                        value: 'webhook',
+                },
+                {
+                        // Set/find Rabbitmq
+                        name: 'RabbitMQ',
+                        action: 'RabbitMQ',
+                        description: 'Configure or fetch a RabbitMQ integration',
+                        value: 'rabbitmq',
+                },
+        ],
+        // Set "Webhook" as the default option
+        default: 'webhook',
 };

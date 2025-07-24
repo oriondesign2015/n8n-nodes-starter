@@ -5,7 +5,7 @@ import { INodeProperties } from 'n8n-workflow';
 export const messagesFields: INodeProperties[] = [
 	// Campos = Enviar mensagem de texto
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -147,7 +147,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Imagem
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -296,7 +296,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Video
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -445,7 +445,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Audio
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -581,7 +581,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Documento
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -744,7 +744,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Enquete
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -922,7 +922,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Status
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -1044,7 +1044,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Documento
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -1207,7 +1207,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Contato
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -1307,7 +1307,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Lista
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -1554,7 +1554,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar Botões
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -1731,7 +1731,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Enviar PIX
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -1853,7 +1853,7 @@ export const messagesFields: INodeProperties[] = [
 
 	// Campos = Reagir Mensagem
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',

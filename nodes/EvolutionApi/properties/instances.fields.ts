@@ -6,7 +6,7 @@ import { INodeProperties } from 'n8n-workflow';
 export const instancesFields: INodeProperties[] = [
 	// Campos = Criar Instancia
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -582,7 +582,7 @@ export const instancesFields: INodeProperties[] = [
 
 	// Campos = Conectar Instância
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -598,7 +598,7 @@ export const instancesFields: INodeProperties[] = [
 
 	// Campos = Buscar Instancia
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -614,7 +614,7 @@ export const instancesFields: INodeProperties[] = [
 
 	// Campos = Definir Comportamento
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -722,7 +722,7 @@ export const instancesFields: INodeProperties[] = [
 
 	// Campos = Definir presença
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -762,7 +762,7 @@ export const instancesFields: INodeProperties[] = [
 
 	// Campos = Proxy
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -935,7 +935,7 @@ export const instancesFields: INodeProperties[] = [
 
 	// Campos = Deletar instancia
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',

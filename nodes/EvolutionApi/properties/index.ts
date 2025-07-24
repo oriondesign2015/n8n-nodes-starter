@@ -16,65 +16,65 @@ import { chatOperations } from './chat.operations';
 import { profileFields } from './profile.fields';
 import { profileOperationsOptions } from './profile.operations';
 const resourcesOptions: INodeProperties = {
-	displayName: 'Recurso',
-	name: 'resource',
-	type: 'options',
-	noDataExpression: true,
-	options: [
-		{
-			name: 'Instancia',
-			value: 'instances-api',
-		},
-		{
-			name: 'Mensagem',
-			value: 'messages-api',
-		},
-		{
-			name: 'Grupo',
-			value: 'groups-api',
-		},
-		{
-			name: 'Chat',
-			value: 'chat-api',
-		},
-		{
-			name: 'Perfil',
-			value: 'profile-api',
-		},
-		{
-			name: 'Evento',
-			value: 'events-api',
-		},
-		{
-			name: 'Integração',
-			value: 'integrations-api',
-		},
-	],
-	default: 'instances-api',
+        displayName: 'Resource',
+        name: 'resource',
+        type: 'options',
+        noDataExpression: true,
+        options: [
+                {
+                        name: 'Instance',
+                        value: 'instances-api',
+                },
+                {
+                        name: 'Message',
+                        value: 'messages-api',
+                },
+                {
+                        name: 'Group',
+                        value: 'groups-api',
+                },
+                {
+                        name: 'Chat',
+                        value: 'chat-api',
+                },
+                {
+                        name: 'Profile',
+                        value: 'profile-api',
+                },
+                {
+                        name: 'Event',
+                        value: 'events-api',
+                },
+                {
+                        name: 'Integration',
+                        value: 'integrations-api',
+                },
+        ],
+        default: 'instances-api',
 };
 
 export const evolutionNodeProperties = [
-	resourcesOptions,
-	// Funções disponíveis quando selecionado o recurso "Instancias"
-	instancesOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Mensagens"
-	messagesOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Grupos"
-	groupsOperations,
-	// Funções disponíveis quando selecionado o recurso "Eventos"
-	eventsOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Integrações"
-	integrationsOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Perfil"
-	profileOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Chat"
-	chatOperations,
-	// Campos disponíveis quando selecionado o recurso e alguma operação
-	...instancesFields,
-	...messagesFields,
-	...groupsFields,
-	...eventsFields,
-	...integrationsFields,
+        resourcesOptions,
+        // Functions available when the "Instance" resource is selected
+        instancesOperationsOptions,
+        // Functions available when the "Message" resource is selected
+        messagesOperationsOptions,
+        // Functions available when the "Group" resource is selected
+        groupsOperations,
+        // Functions available when the "Event" resource is selected
+        eventsOperationsOptions,
+        // Functions available when the "Integration" resource is selected
+        integrationsOperationsOptions,
+        // Functions available when the "Profile" resource is selected
+        profileOperationsOptions,
+        // Functions available when the "Chat" resource is selected
+        chatOperations,
+        // Fields available when a resource and operation are selected
+        ...instancesFields,
+        ...messagesFields,
+        ...groupsFields,
+        ...eventsFields,
+        ...integrationsFields,
 	...chatFields,
 	...profileFields,
 ];

@@ -5,7 +5,7 @@ import { INodeProperties, NodePropertyTypes } from 'n8n-workflow';
 export const chatFields: INodeProperties[] = [
 	// Campos comuns para todas as operações
 	{
-		displayName: 'Nome Da Instância',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string' as NodePropertyTypes,
 		default: '',

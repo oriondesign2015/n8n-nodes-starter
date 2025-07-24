@@ -5,7 +5,7 @@ import { INodeProperties } from 'n8n-workflow';
 export const integrationsFields: INodeProperties[] = [
 	// Campos = Chatwoot
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -261,7 +261,7 @@ export const integrationsFields: INodeProperties[] = [
 
 	// Campos = Typebot
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -671,7 +671,7 @@ export const integrationsFields: INodeProperties[] = [
 
 	// EVOLUTION BOT
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -1022,7 +1022,7 @@ export const integrationsFields: INodeProperties[] = [
 
 	// Dify
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
@@ -1404,7 +1404,7 @@ export const integrationsFields: INodeProperties[] = [
 	},
 
 	{
-		displayName: 'Nome Da Instancia',
+		displayName: 'Instance Name',
 		name: 'instanceName',
 		type: 'string',
 		default: '',
