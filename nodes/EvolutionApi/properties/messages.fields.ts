@@ -649,6 +649,20 @@ export const messagesFields: INodeProperties[] = [
 		},
 	},
 	{
+		displayName: 'Mime/Type Do Arquivo',
+		name: 'mimetype',
+		type: 'string',
+		default: 'application/pdf',
+
+		description: 'Mime/Type do arquivo do documento',
+		displayOptions: {
+			show: {
+				resource: ['messages-api'],
+				operation: ['send-document'],
+			},
+		},
+	},
+	{
 		displayName: 'Opções',
 		name: 'options_message',
 		type: 'collection',
@@ -1104,6 +1118,20 @@ export const messagesFields: INodeProperties[] = [
 		default: 'document.pdf',
 
 		description: 'Nome do arquivo do documento',
+		displayOptions: {
+			show: {
+				resource: ['messages-api'],
+				operation: ['sendDocument'],
+			},
+		},
+	},
+	{
+		displayName: 'Mime/Type Do Arquivo',
+		name: 'mimetype',
+		type: 'string',
+		default: 'document/pdf',
+
+		description: 'Mime/Type do arquivo do documento',
 		displayOptions: {
 			show: {
 				resource: ['messages-api'],

@@ -10,7 +10,7 @@ import { resourceOperationsFunctions } from './execute';
 
 export class EvolutionApi implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Evolution API',
+		displayName: 'Evolution API Customized',
 		name: 'evolutionApi',
 		icon: 'file:evolutionapi.svg',
 		group: ['transform'],

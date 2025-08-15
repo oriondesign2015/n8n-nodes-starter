@@ -1,19 +1,29 @@
 {
-  "name": "n8n-nodes-evolution-api",
-  "version": "1.0.4",
-  "description": "A Evolution API é um hub de canais com foco no WhatsApp",
+  "name": "@klimp3l/n8n-nodes-evolution-api",
+  "version": "1.0.5",
+  "description": "Evolution API nodes para N8N - Versão customizada com campo MimeType",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "evolution-api",
+    "whatsapp",
+    "n8n",
+    "automation",
+    "workflow",
+    "customized"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/Klimp3l/n8n-nodes-evolution-api",
   "author": {
-    "name": "OrionDesign",
-    "email": "contato@oriondesign.art.br"
+    "name": "Klimp3l",
+    "email": "contato@klimp3l.com",
+    "url": "https://github.com/Klimp3l"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oriondesign2015/n8n-nodes-evolution-api.git"
+    "url": "https://github.com/Klimp3l/n8n-nodes-evolution-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Klimp3l/n8n-nodes-evolution-api/issues"
   },
   "engines": {
     "node": ">=18.10",
@@ -28,11 +38,17 @@
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
     "lintfix": "eslint nodes credentials package.json --fix",
-    "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json",
+    "prepack": "pnpm build"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [

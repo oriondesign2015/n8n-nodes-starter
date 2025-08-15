@@ -1,2 +1,62 @@
-.DS_Store
+# Arquivos de desenvolvimento
+.vscode/
+.idea/
+*.log
 *.tsbuildinfo
+
+# Dependências de desenvolvimento
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# Arquivos de build temporários
+*.tmp
+*.temp
+
+# Arquivos de teste
+test/
+tests/
+__tests__/
+*.test.ts
+*.spec.ts
+
+# Arquivos de configuração de desenvolvimento
+.eslintrc.js
+.eslintrc.prepublish.js
+.prettierrc.js
+tsconfig.json
+tslint.json
+gulpfile.js
+
+# Arquivos de CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Arquivos de documentação de desenvolvimento
+README_TEMPLATE.md
+CODE_OF_CONDUCT.md
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Arquivos de backup
+*.bak
+*.backup
+*~
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.production
+.env.staging
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
