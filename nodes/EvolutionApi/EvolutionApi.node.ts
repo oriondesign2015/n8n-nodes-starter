@@ -16,7 +16,7 @@ export class EvolutionApi implements INodeType {
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
-		description: 'Interact with Evolution API',
+		description: 'Interact with Evolution API HEISENBERG',
 		defaults: {
 			name: 'Evolution API',
 		},

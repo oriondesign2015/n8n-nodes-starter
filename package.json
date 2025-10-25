@@ -1,6 +1,6 @@
 {
   "name": "@heisenbot/n8n-nodes-evolution-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Evolution API é um hub de canais com foco no WhatsApp",
   "keywords": [
     "n8n-community-node-package"
