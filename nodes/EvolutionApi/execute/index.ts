@@ -63,6 +63,7 @@ import { removeProfilePicture } from './profile/removeProfilePicture';
 import { fetchPrivacySettings } from './profile/fetchPrivacySettings';
 import { updatePrivacySettings } from './profile/updatePrivacySettings';
 import { joinGroup } from './groups/joinGroup';
+import { GetLabels } from './labels/createLabel';
 type ResourceOperationFunctions = {
 	[resource: string]: {
 		[operation: string]: (ef: IExecuteFunctions) => Promise<any>;
@@ -138,6 +139,11 @@ export const resourceOperationsFunctions: ResourceOperationFunctions = {
 		'find-messages': findMessages,
 		'find-status-messages': findStatusMessages,
 		'find-chats': findChats,
+	},
+	'labels-api': {
+		'ticket-add-label': GetLabels,
+		'ticket-remove-label': GetLabels,
+		'ticket-verify-label': GetLabels,
 	},
 	'profile-api': {
 		'fetch-profile': fetchProfile,
