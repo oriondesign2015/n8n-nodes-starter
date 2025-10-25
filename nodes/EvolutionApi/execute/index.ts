@@ -97,6 +97,11 @@ export const resourceOperationsFunctions: ResourceOperationFunctions = {
 		'send-pix': sendPix,
 		'send-reaction': sendReaction,
 	},
+	'etiquetas-api': {
+		'ticket-add-label': GetLabels,
+		'ticket-remove-label': GetLabels,
+		'ticket-verify-label': GetLabels,
+	},
 	'events-api': {
 		'webhook': setWebhook,
 		'rabbitmq': setRabbitMQ,
@@ -139,11 +144,6 @@ export const resourceOperationsFunctions: ResourceOperationFunctions = {
 		'find-messages': findMessages,
 		'find-status-messages': findStatusMessages,
 		'find-chats': findChats,
-	},
-	'etiquetas-api': {
-		'ticket-add-label': GetLabels,
-		'ticket-remove-label': GetLabels,
-		'ticket-verify-label': GetLabels,
 	},
 	'profile-api': {
 		'fetch-profile': fetchProfile,
