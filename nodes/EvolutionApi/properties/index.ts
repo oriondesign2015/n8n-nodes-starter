@@ -38,7 +38,7 @@ const resourcesOptions: INodeProperties = {
 			value: 'chat-api',
 		},
 		{
-			name: 'Labels',
+			name: 'Etiquetas',
 			value: 'etiquetas-api',
 		},
 		{
