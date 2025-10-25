@@ -140,8 +140,8 @@ export const resourceOperationsFunctions: ResourceOperationFunctions = {
 		'find-status-messages': findStatusMessages,
 		'find-chats': findChats,
 	},
-	'label': {
-		'Verify-labels': GetLabels,
+	'etiquetas-api': {
+		'ticket-add-label': GetLabels,
 		'ticket-remove-label': GetLabels,
 		'ticket-verify-label': GetLabels,
 	},

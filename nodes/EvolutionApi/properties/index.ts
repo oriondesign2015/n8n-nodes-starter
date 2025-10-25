@@ -39,7 +39,7 @@ const resourcesOptions: INodeProperties = {
 		},
 		{
 			name: 'Labels',
-			value: 'labels-api',
+			value: 'etiquetas-api',
 		},
 		{
 			name: 'Perfil',

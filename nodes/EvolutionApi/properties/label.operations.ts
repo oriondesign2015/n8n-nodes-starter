@@ -1,14 +1,14 @@
 import { INodeProperties } from 'n8n-workflow';
 
-// Opções da labels-api (Etiquetas)
+// Opções da etiquetas-api (Etiquetas)
 export const ticketsOperationsOptions: INodeProperties = {
     displayName: 'Etiquetas',
-    name: 'tickets',
+    name: 'etiquetas',
     type: 'options',
     noDataExpression: true,
     displayOptions: {
         show: {
-            resource: ['labels-api'], // Value do Resource
+            resource: ['etiquetas-api'], // Value do Resource
         },
     },
     options: [
