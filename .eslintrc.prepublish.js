@@ -3,8 +3,6 @@
  */
 module.exports = {
 	extends: "./.eslintrc.js",
-
-	// Regras globais (aplicam-se a todos os arquivos, incluindo .ts)
 	rules: {
 		'n8n-nodes-base/node-param-resource-with-plural-option': 'off',
 	},

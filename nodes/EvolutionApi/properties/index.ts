@@ -15,6 +15,7 @@ import { chatOperations } from './chat.operations';
 import { profileFields } from './profile.fields';
 import { profileOperationsOptions } from './profile.operations';
 import { ticketsOperationsOptions } from './label.operations';
+import { ticketsFields } from './label.fields';
 const resourcesOptions: INodeProperties = {
 	displayName: 'Recurso',
 	name: 'resource',
@@ -78,7 +79,7 @@ export const evolutionNodeProperties = [
 	// Campos disponíveis quando selecionado o recurso e alguma operação
 	...instancesFields,
 	...messagesFields,
-	// ...ticketsFields,
+	...ticketsFields,
 	...groupsFields,
 	...eventsFields,
 	...integrationsFields,

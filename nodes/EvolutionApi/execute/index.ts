@@ -63,7 +63,7 @@ import { removeProfilePicture } from './profile/removeProfilePicture';
 import { fetchPrivacySettings } from './profile/fetchPrivacySettings';
 import { updatePrivacySettings } from './profile/updatePrivacySettings';
 import { joinGroup } from './groups/joinGroup';
-import { GetLabels } from './labels/createLabel';
+import { GetLabels } from './labels/verifyLabel';
 type ResourceOperationFunctions = {
 	[resource: string]: {
 		[operation: string]: (ef: IExecuteFunctions) => Promise<any>;
