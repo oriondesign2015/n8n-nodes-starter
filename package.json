@@ -7,7 +7,10 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/misterbot-gtx/n8n-nodes-evolution-api#readme",
-  "author": "Heisenbot <contato@heisenbot.art.br>",
+  "author": {
+    "name": "Heisenbot",
+    "email": "contato@heisenbot.art.br"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/misterbot-gtx/n8n-nodes-evolution-api.git"
