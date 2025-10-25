@@ -2,7 +2,7 @@ import { INodeProperties, NodePropertyTypes } from 'n8n-workflow';
 
 export const ticketsFields: INodeProperties[] = [
 	{
-		displayName: 'Nome da Etiqueta',
+		displayName: 'Nome Da Etiqueta',
 		name: 'labelName',
 		type: 'string' as NodePropertyTypes,
 		default: '',
@@ -16,7 +16,7 @@ export const ticketsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Cor da Etiqueta',
+		displayName: 'Cor Da Etiqueta',
 		name: 'labelColor',
 		type: 'color' as NodePropertyTypes,
 		default: '#000000',
@@ -29,7 +29,7 @@ export const ticketsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Número do Contato',
+		displayName: 'Número Do Contato',
 		name: 'remoteJid',
 		type: 'string' as NodePropertyTypes,
 		default: '',
@@ -43,7 +43,7 @@ export const ticketsFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID da Etiqueta',
+		displayName: 'ID Da Etiqueta',
 		name: 'labelId',
 		type: 'string' as NodePropertyTypes,
 		default: '',
