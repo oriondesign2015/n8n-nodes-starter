@@ -5,7 +5,6 @@ import { integrationsFields as integrationsFields } from './integrations.fields'
 import { messagesFields as messagesFields } from './messages.fields';
 import { eventsOperationsOptions } from './events.operations';
 import { instancesOperationsOptions } from './instances.operations';
-import { ticketsOperationsOptions } from './label.operations';
 // import { ticketsFields } from './messages.fields';
 import { integrationsOperationsOptions } from './integrations.operations';
 import { messagesOperationsOptions } from './messages.operations';
@@ -15,6 +14,7 @@ import { chatFields } from './chat.fields';
 import { chatOperations } from './chat.operations';
 import { profileFields } from './profile.fields';
 import { profileOperationsOptions } from './profile.operations';
+import { ticketsOperationsOptions } from './label.operations';
 const resourcesOptions: INodeProperties = {
 	displayName: 'Recurso',
 	name: 'resource',
