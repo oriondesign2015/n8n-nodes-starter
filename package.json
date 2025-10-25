@@ -6,11 +6,11 @@
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/oriondesign2015/n8n-nodes-evolution-api#readme",
-  "author": "OrionDesign <contato@oriondesign.art.br>",
+  "homepage": "https://github.com/misterbot-gtx/n8n-nodes-evolution-api#readme",
+  "author": "Heisenbot <contato@heisenbot.art.br>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oriondesign2015/n8n-nodes-evolution-api.git"
+    "url": "git+https://github.com/misterbot-gtx/n8n-nodes-evolution-api.git"
   },
   "engines": {
     "node": ">=18.10",
