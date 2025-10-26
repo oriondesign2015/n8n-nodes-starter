@@ -9,23 +9,21 @@ import { evolutionRequest } from '../evolutionRequest';
 export async function addLabel(ef: IExecuteFunctions) {
 	try {
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
-		const labelName = ef.getNodeParameter('labelName', 0) as string;
-		const labelColor = ef.getNodeParameter('labelColor', 0) as string;
+		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
+		const labelId = ef.getNodeParameter('labelId', 0) as string;
 
-		const body: any = {
-			name: labelName,
+		const body = {
+			number: remoteJid,
+			labelId: labelId,
+			action: 'add',
 		};
-
-		if (labelColor) {
-			body.color = labelColor;
-		}
 
 		const requestOptions: IRequestOptions = {
 			method: 'POST' as IHttpRequestMethods,
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			uri: `/label/${instanceName}`,
+			uri: `/label/handleLabel/${instanceName}`,
 			body,
 			json: true,
 		};

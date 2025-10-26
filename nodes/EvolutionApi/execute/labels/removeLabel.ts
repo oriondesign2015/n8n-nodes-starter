@@ -9,11 +9,22 @@ import { evolutionRequest } from '../evolutionRequest';
 export async function removeLabel(ef: IExecuteFunctions) {
 	try {
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
+		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 		const labelId = ef.getNodeParameter('labelId', 0) as string;
 
+		const body = {
+			number: remoteJid,
+			labelId: labelId,
+			action: 'remove',
+		};
+
 		const requestOptions: IRequestOptions = {
-			method: 'DELETE' as IHttpRequestMethods,
-			uri: `/label/${instanceName}/${labelId}`,
+			method: 'POST' as IHttpRequestMethods,
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			uri: `/label/handleLabel/${instanceName}`,
+			body,
 			json: true,
 		};
 

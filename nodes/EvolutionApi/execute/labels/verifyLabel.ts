@@ -12,7 +12,7 @@ export async function getLabels(ef: IExecuteFunctions) {
 
 		const requestOptions: IRequestOptions = {
 			method: 'GET' as IHttpRequestMethods,
-			uri: `/label/${instanceName}/fetch`,
+			uri: `/label/findLabels/${instanceName}`,
 			json: true,
 		};
 

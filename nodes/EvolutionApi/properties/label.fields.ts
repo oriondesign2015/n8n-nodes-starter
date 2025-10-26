@@ -17,47 +17,30 @@ export const labelsFields: INodeProperties[] = [
 		},
 	},
 
-	// Campos para adicionar label
+	// Campos para adicionar e remover label
 	{
-		displayName: 'Nome Da Label',
-		name: 'labelName',
+		displayName: 'Número (remoteJid)',
+		name: 'remoteJid',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o nome da label a ser adicionada',
+		description: 'Digite o número WhatsApp (ex: 5511999999999@s.whatsapp.net)',
 		displayOptions: {
 			show: {
 				resource: ['labels-api'],
-				operation: ['add-label'],
 			},
 		},
 	},
-	{
-		displayName: 'Cor Da Label',
-		name: 'labelColor',
-		type: 'color',
-		default: '#000000',
-		description: 'Digite a cor da label em formato hexadecimal (ex: #FF0000)',
-		displayOptions: {
-			show: {
-				resource: ['labels-api'],
-				operation: ['add-label'],
-			},
-		},
-	},
-
-	// Campos para remover label
 	{
 		displayName: 'ID Da Label',
 		name: 'labelId',
 		type: 'string',
 		default: '',
 		required: true,
-		description: 'Digite o ID da label a ser removida',
+		description: 'Digite o ID da label',
 		displayOptions: {
 			show: {
 				resource: ['labels-api'],
-				operation: ['remove-label'],
 			},
 		},
 	},
