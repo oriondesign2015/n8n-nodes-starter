@@ -12,7 +12,7 @@ export async function getLabels(ef: IExecuteFunctions) {
 		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 
 		const requestOptions: IRequestOptions = {
-			method: 'POST' as IHttpRequestMethods,
+			method: 'GET' as IHttpRequestMethods,
 			headers: {
 				'Content-Type': 'application/json',
 			},
