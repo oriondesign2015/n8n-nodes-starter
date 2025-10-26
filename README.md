@@ -264,5 +264,5 @@ Contribua para o crescimento deste projeto! Você pode ajudar de diversas formas
 
 <h1></h1>
 <p align="center">
-Desenvolvido com ❤️ por OrionDesign
+Desenvolvido com ❤️ por HEISENBERG
 </p>
