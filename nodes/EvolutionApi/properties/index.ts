@@ -5,7 +5,6 @@ import { integrationsFields as integrationsFields } from './integrations.fields'
 import { messagesFields as messagesFields } from './messages.fields';
 import { eventsOperationsOptions } from './events.operations';
 import { instancesOperationsOptions } from './instances.operations';
-// import { ticketsFields } from './messages.fields';
 import { integrationsOperationsOptions } from './integrations.operations';
 import { messagesOperationsOptions } from './messages.operations';
 import { groupsFields } from './groups.fields';
@@ -14,8 +13,8 @@ import { chatFields } from './chat.fields';
 import { chatOperations } from './chat.operations';
 import { profileFields } from './profile.fields';
 import { profileOperationsOptions } from './profile.operations';
-import { ticketsOperationsOptions } from './label.operations';
-import { ticketsFields } from './label.fields';
+import { labelsOperationsOptions } from './label.operations';
+import { labelsFields } from './label.fields';
 const resourcesOptions: INodeProperties = {
 	displayName: 'Recurso',
 	name: 'resource',
@@ -31,16 +30,16 @@ const resourcesOptions: INodeProperties = {
 			value: 'messages-api',
 		},
 		{
+			name: 'Etiquetas',
+			value: 'etiquetas-api',
+		},
+		{
 			name: 'Grupo',
 			value: 'groups-api',
 		},
 		{
 			name: 'Chat',
 			value: 'chat-api',
-		},
-		{
-			name: 'Etiquetas',
-			value: 'etiquetas-api',
 		},
 		{
 			name: 'Perfil',
@@ -64,25 +63,25 @@ export const evolutionNodeProperties = [
 	instancesOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Mensagens"
 	messagesOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Etiquetas"
-	ticketsOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Grupos"
 	groupsOperations,
-	// Funções disponíveis quando selecionado o recurso "Eventos"
-	eventsOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Integrações"
-	integrationsOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Perfil"
 	profileOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Chat"
 	chatOperations,
+	// Funções disponíveis quando selecionado o recurso "Label ACTIONS"
+	labelsOperationsOptions,
+	// Funções disponíveis quando selecionado o recurso "Eventos"
+	eventsOperationsOptions,
+	// Funções disponíveis quando selecionado o recurso "Integrações"
+	integrationsOperationsOptions,
 	// Campos disponíveis quando selecionado o recurso e alguma operação
 	...instancesFields,
 	...messagesFields,
-	...ticketsFields,
 	...groupsFields,
 	...eventsFields,
 	...integrationsFields,
 	...chatFields,
 	...profileFields,
+	...labelsFields,
 ];

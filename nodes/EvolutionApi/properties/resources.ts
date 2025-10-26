@@ -15,10 +15,6 @@ export const resources: INodeProperties = {
 			value: 'messages-api',
 		},
 		{
-			name: 'Labels',
-			value: 'etiquetas-api',
-		},
-		{
 			name: 'Chat',
 			value: 'chat-api',
 		},
@@ -29,6 +25,10 @@ export const resources: INodeProperties = {
 		{
 			name: 'Perfil',
 			value: 'profile-api',
+		},
+		{
+			name: 'Label ACTIONS',
+			value: 'labels-api',
 		},
 		{
 			name: 'Evento',

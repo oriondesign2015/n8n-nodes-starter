@@ -6,13 +6,14 @@ import {
 } from 'n8n-workflow';
 import { evolutionRequest } from '../evolutionRequest';
 
-export async function getLabels(ef: IExecuteFunctions) {
+export async function removeLabel(ef: IExecuteFunctions) {
 	try {
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
+		const labelId = ef.getNodeParameter('labelId', 0) as string;
 
 		const requestOptions: IRequestOptions = {
-			method: 'GET' as IHttpRequestMethods,
-			uri: `/label/${instanceName}/fetch`,
+			method: 'DELETE' as IHttpRequestMethods,
+			uri: `/label/${instanceName}/${labelId}`,
 			json: true,
 		};
 
@@ -28,7 +29,7 @@ export async function getLabels(ef: IExecuteFunctions) {
 			success: false,
 			error: {
 				message: error.message,
-				details: 'Erro ao buscar labels',
+				details: 'Erro ao remover label',
 				code: error.code || 'UNKNOWN_ERROR',
 				timestamp: new Date().toISOString(),
 			},
