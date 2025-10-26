@@ -9,17 +9,10 @@ import { evolutionRequest } from '../evolutionRequest';
 export async function getLabels(ef: IExecuteFunctions) {
 	try {
 		const instanceName = ef.getNodeParameter('instanceName', 0) as string;
-		const remoteJid = ef.getNodeParameter('remoteJid', 0) as string;
 
 		const requestOptions: IRequestOptions = {
 			method: 'GET' as IHttpRequestMethods,
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			uri: `/label/findLabels/${instanceName}`,
-			body: {
-				number: remoteJid,
-			},
+			uri: `/label/fetch/${instanceName}`,
 			json: true,
 		};
 
