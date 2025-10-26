@@ -63,6 +63,9 @@ import { removeProfilePicture } from './profile/removeProfilePicture';
 import { fetchPrivacySettings } from './profile/fetchPrivacySettings';
 import { updatePrivacySettings } from './profile/updatePrivacySettings';
 import { joinGroup } from './groups/joinGroup';
+import { getLabels } from './labels/verifyLabel';
+import { addLabel } from './labels/addLabel';
+import { removeLabel } from './labels/removeLabel';
 type ResourceOperationFunctions = {
 	[resource: string]: {
 		[operation: string]: (ef: IExecuteFunctions) => Promise<any>;
@@ -95,6 +98,11 @@ export const resourceOperationsFunctions: ResourceOperationFunctions = {
 		'send-stories': sendStories,
 		'send-pix': sendPix,
 		'send-reaction': sendReaction,
+	},
+	'labels-api': {
+		'get-labels': getLabels,
+		'add-label': addLabel,
+		'remove-label': removeLabel,
 	},
 	'events-api': {
 		'webhook': setWebhook,

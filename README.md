@@ -4,26 +4,28 @@
 Este Community Nodes é uma solução 100% gratuita, criada com o intuito de simplificar e auxiliar toda a comunidade a integrar e utilizar ao máximo os principais recursos oferecidos pela <b>Evolution API v2.2+</b> em seus projetos no N8N. <b>Desenvolvido por OrionDesign.</b>
 </p>
 <br>
-	
+
 <div align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fn8n-nodes-evolution-api&query=downloads&style=for-the-badge&label=Total%20de%20Downloads&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fn8n-nodes-evolution-api" alt="Dynamic JSON Badge">
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2F%40heisenbot%252Fn8n-nodes-evolution-api&query=downloads&style=for-the-badge&label=Total%20de%20Downloads&labelColor=%230d1117&color=%23359514&cacheSeconds=30&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40heisenbot%2Fn8n-nodes-evolution-api" alt="Downloads do npm">
+</div>
+
+<br>
+
+<div align="center">
+  <strong>HEISENBERG</strong>
 </div>
 <br>
-</p>
-<p align="center">
-  <a href="https://oriondesign.art.br/whatsapp1"><img src="https://github.com/user-attachments/assets/5a469114-2054-4f01-85b2-51a282518658" alt=”SetupOrion” ></a>     
-  <a href="https://oriondesign.art.br/whatsapp2"><img src="https://github.com/user-attachments/assets/3e3580a9-ae8e-4209-84fc-cfc1c03a8f12" alt=”SetupOrion” ></a>     
-  <a href="https://oriondesign.art.br/whatsapp3"><img src="https://github.com/user-attachments/assets/91aa7733-c09c-474f-9483-54cb678213d2" alt=”SetupOrion” ></a>
-</p>
 
+</p>
 
 <h1></h1>
 
 <h3>⚙️ Requisitos</h3>
 
-Para utilizar o nosso **Community Node**, é necessário atender aos seguintes requisitos:  
-- **N8N** na versão **1.54.4** ou superior  
-- **Evolution API** na versão **2.2.0** ou superior  
+Para utilizar o nosso **Community Node**, é necessário atender aos seguintes requisitos:
+
+* **N8N** na versão **1.54.4** ou superior
+* **Evolution API** na versão **2.2.0** ou superior
 
 <h1></h1>
 
@@ -34,33 +36,33 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-	<details>
-  	<summary>   ✅ <b> Criar Instancia</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Gerar Qr-Code</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Buscar Instancia</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Definir Comportamento</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Definir Presença</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Definir Proxy</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Buscar Proxy</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Desconectar WhatsApp</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Deletar Instancia</b></summary>
-	</details>
+ <details>
+   <summary>   ✅ <b> Criar Instancia</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Gerar Qr-Code</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Buscar Instancia</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Definir Comportamento</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Definir Presença</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Definir Proxy</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Buscar Proxy</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Desconectar WhatsApp</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Deletar Instancia</b></summary>
+ </details>
 </details>
 
 <h3> Mensagem</h3>
@@ -68,42 +70,42 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-	<details>
-  	<summary>   ✅ <b> Enviar Texto</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Imagem</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Video</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Audio</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Documento</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Enquete</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Contato</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Lista</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Botão</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Pix</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Status</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Reagir a Mensagem</b></summary>
-	</details>
+ <details>
+   <summary>   ✅ <b> Enviar Texto</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Imagem</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Video</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Audio</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Documento</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Enquete</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Contato</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Lista</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Botão</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Pix</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Status</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Reagir a Mensagem</b></summary>
+ </details>
 </details>
 
 <h3>Grupo</h3>
@@ -111,45 +113,45 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-	<details>
-  	<summary>   ✅ <b> Criar Grupo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Atualizar Imagem do Grupo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Atualizar Nome do Grupo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Atualizar Descrição do Grupo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Atualizar Configurações do Grupo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Atualizar Membros</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Buscar Link de convite do Grupo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Revogar Link de convite do Grupo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Link de Convite do Grupo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Encontrar Participantes</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Mensagens Temporarias</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Sair do Grupo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Entrar no Grupo</b></summary>
-	</details>
+ <details>
+   <summary>   ✅ <b> Criar Grupo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Atualizar Imagem do Grupo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Atualizar Nome do Grupo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Atualizar Descrição do Grupo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Atualizar Configurações do Grupo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Atualizar Membros</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Buscar Link de convite do Grupo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Revogar Link de convite do Grupo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Link de Convite do Grupo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Encontrar Participantes</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Mensagens Temporarias</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Sair do Grupo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Entrar no Grupo</b></summary>
+ </details>
 </details>
 
 <h3>Chat</h3>
@@ -157,48 +159,48 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-	<details>
-  	<summary>   ✅ <b> Verificar Numero</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Ler Mensagem</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Gerenciar Arquivoo</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Marcar como Não lido</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Deletar Mensagem</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Buscar Foto de Perfil</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Obter Midia em Base64</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Editar Mensagem</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Enviar Presença</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Bloquear Contato</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Buscar Contatos</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Procurar Mensagens</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Procurar Status</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Procurar Chats</b></summary>
-	</details>
+ <details>
+   <summary>   ✅ <b> Verificar Numero</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Ler Mensagem</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Gerenciar Arquivoo</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Marcar como Não lido</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Deletar Mensagem</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Buscar Foto de Perfil</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Obter Midia em Base64</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Editar Mensagem</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Enviar Presença</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Bloquear Contato</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Buscar Contatos</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Procurar Mensagens</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Procurar Status</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Procurar Chats</b></summary>
+ </details>
 </details>
 
 <h3>Evento</h3>
@@ -206,12 +208,34 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-	<details>
-  	<summary>   ✅ <b> Webhook</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> RabbitMQ</b></summary>
-	</details>
+ <details>
+   <summary>   ✅ <b> Webhook</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> RabbitMQ</b></summary>
+ </details>
+</details>
+
+<h3>Etiquetas</h3>
+
+⚡ Este recurso permite gerenciar etiquetas (tags) de contatos diretamente no WhatsApp por meio da Evolution API. Com ele, você pode verificar quais etiquetas estão associadas a um contato, adicionar novas etiquetas para segmentação ou organização, e remover etiquetas existentes conforme necessário. Ideal para automação de atendimento, classificação de leads ou gestão de campanhas, tudo integrado de forma segura e em tempo real à sua instância do WhatsApp.
+
+<br>
+
+<details>
+  <summary><b>Lista de operações</b></summary>
+  <details>
+    <summary>   ✅ <b> Verificar Etiquetas</b></summary>
+    <p>Obtém todas as etiquetas associadas a um contato específico em uma instância do WhatsApp.</p>
+  </details>
+  <details>
+    <summary>   ✅ <b> Adicionar Etiquetas</b></summary>
+    <p>Atribui uma ou mais etiquetas a um contato, permitindo categorização dinâmica (ex: "cliente", "pendente", "vip").</p>
+  </details>
+  <details>
+    <summary>   ✅ <b> Remover Etiquetas</b></summary>
+    <p>Remove etiquetas específicas de um contato, mantendo sua base de dados sempre atualizada.</p>
+  </details>
 </details>
 
 <h3>Integração</h3>
@@ -219,32 +243,33 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-	<details>
-  	<summary>   ✅ <b> Chatwoot</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Evolution Bot</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Typebot</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Dify</b></summary>
-	</details>
-	<details>
-  	<summary>   ✅ <b> Floise</b></summary>
-	</details>
+ <details>
+   <summary>   ✅ <b> Chatwoot</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Evolution Bot</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Typebot</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Dify</b></summary>
+ </details>
+ <details>
+   <summary>   ✅ <b> Floise</b></summary>
+ </details>
 </details>
 
 <h1></h1>
 
 <h3>🤝 Contribuição</h3>
 
-Contribua para o crescimento deste projeto! Você pode ajudar de diversas formas:  
-- **Pull Requests**: Envie melhorias, correções ou novas funcionalidades.  
-- **Issues**: Relate problemas ou sugira novas ideias.  
-- **Sugestões**: Compartilhe suas opiniões e feedbacks.  
-- **Documentação**: Ajude a melhorar ou expandir a documentação existente.  
+Contribua para o crescimento deste projeto! Você pode ajudar de diversas formas:
+
+* **Pull Requests**: Envie melhorias, correções ou novas funcionalidades.
+* **Issues**: Relate problemas ou sugira novas ideias.
+* **Sugestões**: Compartilhe suas opiniões e feedbacks.
+* **Documentação**: Ajude a melhorar ou expandir a documentação existente.
 
 <h1></h1>
 
@@ -264,5 +289,5 @@ Contribua para o crescimento deste projeto! Você pode ajudar de diversas formas
 
 <h1></h1>
 <p align="center">
-Desenvolvido com ❤️ por OrionDesign
+Desenvolvido com ❤️ por HEISENBERG
 </p>

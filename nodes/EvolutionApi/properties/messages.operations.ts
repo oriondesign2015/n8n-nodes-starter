@@ -84,7 +84,7 @@ export const messagesOperationsOptions: INodeProperties = {
 
 		// Opção = Enviar Botões
 		{
-			name: 'Enviar Botões',
+			name: 'Enviar Botoes',
 			action: 'Enviar bot es',
 			description: 'Envia mensagem com botões interativos',
 			value: 'send-buttons',

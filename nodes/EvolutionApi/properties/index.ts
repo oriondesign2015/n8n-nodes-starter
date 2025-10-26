@@ -13,6 +13,9 @@ import { chatFields } from './chat.fields';
 import { chatOperations } from './chat.operations';
 import { profileFields } from './profile.fields';
 import { profileOperationsOptions } from './profile.operations';
+import { labelsOperationsOptions } from './label.operations';
+import { labelsFields } from './label.fields';
+
 const resourcesOptions: INodeProperties = {
 	displayName: 'Recurso',
 	name: 'resource',
@@ -40,6 +43,10 @@ const resourcesOptions: INodeProperties = {
 			value: 'profile-api',
 		},
 		{
+			name: 'Etiquetas',
+			value: 'labels-api',
+		},
+		{
 			name: 'Evento',
 			value: 'events-api',
 		},
@@ -59,14 +66,16 @@ export const evolutionNodeProperties = [
 	messagesOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Grupos"
 	groupsOperations,
-	// Funções disponíveis quando selecionado o recurso "Eventos"
-	eventsOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Integrações"
-	integrationsOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Perfil"
 	profileOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Chat"
 	chatOperations,
+	// Funções disponíveis quando selecionado o recurso "Etiquetas"
+	labelsOperationsOptions,
+	// Funções disponíveis quando selecionado o recurso "Eventos"
+	eventsOperationsOptions,
+	// Funções disponíveis quando selecionado o recurso "Integrações"
+	integrationsOperationsOptions,
 	// Campos disponíveis quando selecionado o recurso e alguma operação
 	...instancesFields,
 	...messagesFields,
@@ -75,4 +84,5 @@ export const evolutionNodeProperties = [
 	...integrationsFields,
 	...chatFields,
 	...profileFields,
+	...labelsFields,
 ];

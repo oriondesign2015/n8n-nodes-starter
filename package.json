@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-evolution-api",
-  "version": "1.0.4",
+  "name": "@heisenbot/n8n-nodes-evolution-api",
+  "version": "2.0.5",
   "description": "A Evolution API é um hub de canais com foco no WhatsApp",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/misterbot-gtx/n8n-nodes-evolution-api#readme",
   "author": {
-    "name": "OrionDesign",
-    "email": "contato@oriondesign.art.br"
+    "name": "Heisenbot",
+    "email": "contato@heisenbot.art.br"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oriondesign2015/n8n-nodes-evolution-api.git"
+    "url": "git+https://github.com/misterbot-gtx/n8n-nodes-evolution-api.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -60,5 +60,8 @@
   },
   "resolutions": {
     "axios": "^1.8.4"
+  },
+  "bugs": {
+    "url": "https://github.com/oriondesign2015/n8n-nodes-evolution-api/issues"
   }
 }

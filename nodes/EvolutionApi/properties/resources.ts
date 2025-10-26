@@ -27,6 +27,10 @@ export const resources: INodeProperties = {
 			value: 'profile-api',
 		},
 		{
+			name: 'Etiquetas',
+			value: 'labels-api',
+		},
+		{
 			name: 'Evento',
 			value: 'events-api',
 		},
