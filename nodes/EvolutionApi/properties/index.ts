@@ -43,7 +43,7 @@ const resourcesOptions: INodeProperties = {
 			value: 'profile-api',
 		},
 		{
-			name: 'Label ACTIONS',
+			name: 'Etiquetas',
 			value: 'labels-api',
 		},
 		{
@@ -70,7 +70,7 @@ export const evolutionNodeProperties = [
 	profileOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Chat"
 	chatOperations,
-	// Funções disponíveis quando selecionado o recurso "Label ACTIONS"
+	// Funções disponíveis quando selecionado o recurso "Etiquetas"
 	labelsOperationsOptions,
 	// Funções disponíveis quando selecionado o recurso "Eventos"
 	eventsOperationsOptions,

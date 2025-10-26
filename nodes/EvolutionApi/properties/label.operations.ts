@@ -1,6 +1,6 @@
 import { INodeProperties } from 'n8n-workflow';
 
-// Opções da labels-api (Label Actions)
+// Opções da labels-api (Etiquetas)
 export const labelsOperationsOptions: INodeProperties = {
 	displayName: 'Operação',
 	name: 'operation',
