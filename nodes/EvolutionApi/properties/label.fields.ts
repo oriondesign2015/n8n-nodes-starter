@@ -17,6 +17,21 @@ export const labelsFields: INodeProperties[] = [
 		},
 	},
 
+	// Campo para pegar labels
+	{
+		displayName: 'Número',
+		name: 'remoteJid',
+		type: 'string',
+		default: '',
+		required: true,
+		description: 'Digite o número WhatsApp (ex: 5511999999999@s.whatsapp.net)',
+		displayOptions: {
+			show: {
+				resource: ['labels-api'],
+				operation: ['get-labels'],
+			},
+		},
+	},
 	// Campos para adicionar e remover label
 	{
 		displayName: 'Número (remoteJid)',
@@ -28,6 +43,7 @@ export const labelsFields: INodeProperties[] = [
 		displayOptions: {
 			show: {
 				resource: ['labels-api'],
+				operation: ['add-label', 'remove-label'],
 			},
 		},
 	},
@@ -41,6 +57,7 @@ export const labelsFields: INodeProperties[] = [
 		displayOptions: {
 			show: {
 				resource: ['labels-api'],
+				operation: ['add-label', 'remove-label'],
 			},
 		},
 	},

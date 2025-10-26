@@ -15,9 +15,50 @@ import { profileFields } from './profile.fields';
 import { profileOperationsOptions } from './profile.operations';
 import { labelsOperationsOptions } from './label.operations';
 import { labelsFields } from './label.fields';
-import { resources as resourcesOptions } from './resources';
 
-export const evolutionNodeProperties: INodeProperties[] = [
+const resourcesOptions: INodeProperties = {
+	displayName: 'Recurso',
+	name: 'resource',
+	type: 'options',
+	noDataExpression: true,
+	options: [
+		{
+			name: 'Instancia',
+			value: 'instances-api',
+		},
+		{
+			name: 'Mensagem',
+			value: 'messages-api',
+		},
+		{
+			name: 'Grupo',
+			value: 'groups-api',
+		},
+		{
+			name: 'Chat',
+			value: 'chat-api',
+		},
+		{
+			name: 'Perfil',
+			value: 'profile-api',
+		},
+		{
+			name: 'Label ACTIONS',
+			value: 'labels-api',
+		},
+		{
+			name: 'Evento',
+			value: 'events-api',
+		},
+		{
+			name: 'Integração',
+			value: 'integrations-api',
+		},
+	],
+	default: 'instances-api',
+};
+
+export const evolutionNodeProperties = [
 	resourcesOptions,
 	// Funções disponíveis quando selecionado o recurso "Instancias"
 	instancesOperationsOptions,
