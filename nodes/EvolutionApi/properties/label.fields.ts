@@ -35,7 +35,7 @@ export const labelsFields: INodeProperties[] = [
 	{
 		displayName: 'Cor Da Label',
 		name: 'labelColor',
-		type: 'string',
+		type: 'color',
 		default: '#000000',
 		description: 'Digite a cor da label em formato hexadecimal (ex: #FF0000)',
 		displayOptions: {
