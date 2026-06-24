@@ -23,7 +23,8 @@ Este Community Nodes é uma solução 100% gratuita, criada com o intuito de sim
 
 Para utilizar o nosso **Community Node**, é necessário atender aos seguintes requisitos:  
 - **N8N** na versão **1.54.4** ou superior  
-- **Evolution API** na versão **2.2.0** ou superior  
+- **Evolution API** na versão **2.2.0** ou superior
+- Para utilizar esse node, abra configurações no seu N8N, clique em community-nodes ou a url diretamente: __SEU_N8N__/settings/community-nodes e cole o código: **n8n-nodes-evolution-api**
 
 <h1></h1>
 
